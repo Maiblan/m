@@ -2,31 +2,67 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
 }
 body {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #252525;
+  /* background-color: #252525; */
 }
-.card {
+.container-card {
+  width: 900px;
+  height: 500px;
+  background-color: #181C1F;
+  border-radius: 1pc;
   display: flex;
-  padding: 10px 10px 10px 20px;
+}
+/* .light {
+  background-color: black;
+  color: white;
+} */
+
+p{
+  margin: 10px;
+  color: #FCF5E3;
+  text-shadow: 0 0 50px white;
+}
+
+.card-user{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 50%;
-  border-radius: 30px;
-  transition: background-color 0.3s, color 0.3s;
+  gap: 1pc;
 }
-.light {
-  background-color: #fff;
-  color: #333;
+
+.card-user img{
+  width: 250px;
 }
-.dark {
-  background-color: #252557;
-  color: #fff;
+
+.card-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-left: 0.1px solid black,;
+  padding: 20px;
+  gap: 3pc;
+  }
+
+h1,h2{
+  text-shadow: 0 0 50px white;
+  color:#FCF5E3;
 }
-.photo {
+
+/* .photo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,7 +70,7 @@ body {
 }
 .user-photo {
   width: 200px;
-  border-radius: 50%;
+  border-radius: 10%;
 }
 .photo ul {
   display: flex;
@@ -49,12 +85,12 @@ ul img {
   flex-direction: column;
   justify-content: space-evenly;
   padding: 0 20px;
-}
-.custom-btn {
+} */
+button {
   align-self: center;
   width: 130px;
   height: 40px;
-  color: #fff;
+  color: black;
   border-radius: 100px;
   padding: 10px 25px;
   font-weight: 800;
@@ -62,5 +98,5 @@ ul img {
   transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  background-color: #413476;
+  background-color: #fff;
 }
